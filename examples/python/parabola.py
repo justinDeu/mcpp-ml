@@ -22,9 +22,7 @@ def parabola(x, a=1, h=0, k=0):
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 torch.manual_seed(3)
 
-
 print(f'Using device: {device}')
-
 
 model = Model()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
